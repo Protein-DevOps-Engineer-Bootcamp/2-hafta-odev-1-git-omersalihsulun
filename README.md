@@ -9,6 +9,7 @@
 2. [Not](#not)
 3. [Usage](#usage)
 
+
 ---
 
 #### Aciklama: [![](./docs/img/pin.svg)](#aciklama)
@@ -54,16 +55,18 @@ Usage:
 
 ```
 
+#### 2.Hafta Ödev Ömer Salih Sülün: [![](./docs/img/pin.svg)]
 
-2.Hafta Ödev 
-Ömer Salih Sülün
 
-Gerekli açıklamalar yorum satırı olarak build.sh scriptinin içerisine eklenmiştir.
 
+## Gerekli açıklamalar yorum satırı olarak build.sh scriptinin içerisine eklenmiştir.
+
+```shell
 Usage:
     -b  <branch_name>     Branch name
     -n  <new_branch>      Create new branch
     -f  <zip|tar>         Compress format
     -p  <artifact_path>   Copy artifact to spesific path
     -d  <debug_mode>      Enable debug mode (default: false) <true|false>
-    -h  <help>            Show this help"
+    -h  <help>            Show this help
+```
