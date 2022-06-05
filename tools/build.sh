@@ -22,7 +22,7 @@ usage(){
     echo "${USAGE}"
     exit 1
 }
-
+#Yapılacak işlemin dışarıdan parametre olarak gönderilip, kullanılmasını sağlayacak yapı.
 while getopts ":b:n:f:p:d:h:" flag
 do
     case "${flag}" in
@@ -71,16 +71,18 @@ do
             ;;
         d)
             DEBUG_MODE=${OPTARG}
+            #DEBUG modda çalışıtırlması istenirse debug mode'a değer atanıyor.
             ;;
         h)
             usage
             ;;
         *)
             usage
+            #Default durumda kullanım bilgisi çalıştırılıyor.
             ;;
     esac
 done
-
+#Debug mode'da çalışacaksa komuta -X parametresi ekleniyor.
 if [ "${DEBUG_MODE}" == "true" ]; then
     echo "Debug mode is enabled"
     echo "Branch name: ${BRANCH_NAME}"
