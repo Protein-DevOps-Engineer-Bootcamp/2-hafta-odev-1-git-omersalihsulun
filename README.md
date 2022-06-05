@@ -55,3 +55,5 @@ Usage:
 ```
 
 
+2.Hafta Ödev 
+Ömer Salih Sülün
