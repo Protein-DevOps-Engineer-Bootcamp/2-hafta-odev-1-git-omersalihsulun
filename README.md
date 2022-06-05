@@ -55,7 +55,7 @@ Usage:
 
 ```
 
-# 2.Hafta Ödev Ömer Salih Sülün: [![](./docs/img/pin.svg)]
+# 2.Hafta Ödev Ömer Salih Sülün: [![](./docs/img/pin.svg)]()
 
 
 
