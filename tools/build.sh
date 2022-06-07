@@ -32,7 +32,7 @@ do
                 echo "Branch name is empty"
                 usage
             fi
-            if [ "${BRANCH_NAME}" == "master" || "${BRANCH_NAME}" =="main" ]; then
+            if [ ["${BRANCH_NAME}" == "master"] || ["${BRANCH_NAME}" == "main"] ]; then
                 echo "You are currently on ${BRANCH_NAME} branch. Please be careful."
             fi
             git checkout $BRANCH_NAME
@@ -47,7 +47,7 @@ do
         f)
             COMPRESS_FORMAT=${OPTARG}
             #ZIP veya TAR formatı seçildi. Bunların dışında bir giriş kabul edilmedi.
-            if [ "${COMPRESS_FORMAT}" != "zip" ] && [ "${COMPRESS_FORMAT}" != "tar" ]; then
+            if [ "${COMPRESS_FORMAT}" != "zip" ] || [ "${COMPRESS_FORMAT}" != "tar" ]; then
                 echo "Compress format must be zip or tar"
                 exit 1
             fi
